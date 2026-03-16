@@ -1,0 +1,51 @@
+
+[theme]
+
+base = "light"
+primaryColor = "#006568"
+# backgroundColor = "#d5d7d8ff"
+secondaryBackgroundColor = "#d5d7dbff"
+# textColor = 
+# linkColor =
+# linkUnderline =
+# codeBackgroundColor = 
+# font =
+# fontFaces =
+# baseFontSize =
+# baseFontWeight =
+# headingFont =
+# headingFontSizes =
+# headingFontWeights = 
+# codeFont =
+# codeFontSize =
+# codeFontWeight =
+# baseRadius =
+# buttonRadius =
+# dataframeBorderColor = 
+# dataframeHeaderBackgroundColor =
+# showWidgetBorder =
+# showSidebarBorder =
+# chartCategoricalColors =
+# chartSequentialColors =
+
+
+[theme.sidebar]
+# primaryColor = "#ebf2f3ff"
+backgroundColor = "#006568"
+# secondaryBackgroundColor = "#ebf2f3ff"
+# textColor = "#ebf2f3ff"
+# linkColor =
+# linkUnderline =
+# codeBackgroundColor =
+# headingFont =
+# headingFontSizes =
+# headingFontWeights =
+# codeFont =
+# codeFontSize =
+# codeFontWeight =
+# baseRadius =
+# buttonRadius =
+# borderColor =
+# dataframeBorderColor =
+# dataframeHeaderBackgroundColor =
+# showWidgetBorder =
