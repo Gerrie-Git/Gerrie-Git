@@ -69,7 +69,6 @@ for data in Countries:
         list_of_values2.append(data.value)
         print(data.name, data.value)
 
-for data in Countries:
-    print(data.name, data.value)
+
 
 
