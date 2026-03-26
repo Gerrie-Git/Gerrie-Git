@@ -1,10 +1,14 @@
+from pydantic import BaseModel
+from typing import Optional
+from enums import Genre, Status
 
-class book():
+class Book(BaseModel):
+    id: Optional[int] = None
+    title: str
+    author: str
+    genre: Genre
+    status: Status = Status.AVAILABLE
+    rating: Optional[int] = None
+
     
-    def __init__(self, id:int, title:str, author:str, genre, status, rating):
-        self.id = id
-        self.title = title
-        self.author = author
-        self.genre = genre
-        self.status = status
-        self.rating = rating
+
