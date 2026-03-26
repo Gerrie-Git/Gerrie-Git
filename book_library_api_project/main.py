@@ -1,19 +1,16 @@
 from database import LibraryDB
 from enums import Genre, Status
 from models import Book
+from fastapi import FastAPI, HTTPException
 
 db = LibraryDB()
+app = FastAPI()
 
-book_data = Book(
-    title="Fantastic Mr Fox",
-    author="Roald Dahl",
-    genre=Genre.FICTION,
-    status=Status.AVAILABLE,
-    rating=9
-)
+@app.post("/books")
+def add_book(book: Book):
+    return db.add_book(book)
 
-db.add_book(book_data)
-print(db.list_books())
-
-
+@app.get("/books")
+def list_books():
+    return db.list_books()
 
