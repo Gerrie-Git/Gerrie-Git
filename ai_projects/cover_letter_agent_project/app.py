@@ -3,11 +3,11 @@ import os
 from langchain_openai import ChatOpenAI
 from langchain.tools import tool
 from openai import OpenAI
-#from langgraph.prebuilt import create_react_agent
-#from langgraph.checkpoint.memory import MemorySaver
+from mcp.server.fastmcp import FastMCP
 import json
 
 load_dotenv()
+mcp = FastMCP("cover-letter")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 cv_text = open("cv.txt").read()
