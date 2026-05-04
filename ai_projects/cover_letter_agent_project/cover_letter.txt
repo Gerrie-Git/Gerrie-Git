@@ -1,0 +1,19 @@
+{
+  "critique": [
+    "Strong alignment with the role’s focus on building and owning the analytics layer: the CV shows end-to-end pipeline design, data modeling, and Azure/Databricks experience.",
+    "Clear evidence of stakeholder collaboration and the ability to explain technical concepts simply (called out explicitly in the CV).",
+    "Solid BI tool coverage (Tableau, Power BI) and self-serve enablement experience (maintaining an accessible Tableau environment).",
+    "dbt appears in the Skills section, which supports the role’s requirement for deep data transformation expertise.",
+    "Gaps relative to the JD: no explicit mention of AI tools for workflow automation, no explicit reference to version control (Git) or PR workflows, and no direct mention of data quality testing frameworks or partitioning/clustering.",
+    "While outcomes are described, more quantification (e.g., adoption, performance, or cost impact) could further strengthen the narrative."
+  ],
+  "improvements": [
+    "Add explicit examples of dbt projects (models, testing, documentation) and any governance/metric layer you established.",
+    "If applicable, note experience with Git/PR workflows and data quality testing (e.g., dbt tests, Great Expectations) to address key JD requirements.",
+    "Highlight any use of AI-assisted tooling for documentation or coding acceleration if true.",
+    "Quantify impact where possible (time-to-insight reduction, pipeline reliability, stakeholder adoption).",
+    "Include a concise example of translating a business question into a dimensional model to demonstrate grain discipline.",
+    "If relevant, reference experience explaining partitioning/clustering in simple terms to mirror the JD."
+  ],
+  "revised_letter": "Dear Hiring Team,\n\nI am a Senior Data Engineer based in Amsterdam with a track record of designing and leading cloud data platforms and analytics solutions across financial services, retail, and logistics. At Van Lanschot Kempen, I drove the architecture and development of an advanced Azure-based data platform and built robust data products that transformed complex client and financial datasets into actionable insights for leadership. Previously, as Head of BI at Global Logistics Internet, I led a team that designed and maintained data pipelines and ETL processes and managed an accessible, business-wide Tableau environment.\n\nWhat I bring to MR MARVIS:\n- Analytics engineering foundations: data modeling and transformation with SQL, Python, PySpark on Azure Databricks, and dbt; end-to-end pipeline design from ingestion through the analytics layer.\n- Stakeholder partnership: I craft and communicate solution architectures with technical teams and senior stakeholders, translating business questions into structured data solutions.\n- Self-serve enablement: I enable teams with intuitive, reliable reporting in Tableau and Power BI, converting raw data into executive-ready insights.\n- Data reliability and scalability: I engineer pipelines that deliver clean, actionable data and mentor teams on best practices for maintainable, scalable solutions.\n\nI’m energized by the opportunity to own the analytics layer at MR MARVIS—shaping clear, consistent models and metrics that power trusted reporting and self-serve analytics while collaborating closely with business stakeholders to deliver high-impact outcomes.\n\nI would welcome the chance to discuss how my experience building Azure/Databricks data products, modeling data for analytics with dbt and SQL, and leading cross-functional adoption can help MR MARVIS scale its data platform.\n\nThank you for your consideration.\n\nBest regards,\nGerrit Fourie\nLinkedIn: www.linkedin.com/in/gerritfourie"
+}

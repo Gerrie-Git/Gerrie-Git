@@ -1,0 +1,120 @@
+SenioR DATA E N G I N E E R
+
+
+A B O U T M E
+As an experienced Data
+Engineer, I bring a wealth of
+expertise to the table, with a
+robust background spanning
+the financial, retail, and i-
+gaming sectors. My skill set
+is comprehensive,
+encompassing data
+modeling, warehouse and
+pipeline development, data
+analysis and data
+visualization. Furthermore, I
+am adept at conveying
+technical findings in an easy
+to understand way, as well as
+leading teams, having
+successfully managed and
+operated a group of
+professionals to achieve
+collective goals.
+S K I L L S
+Excel
+Financial Analysis
+Azure Databricks
+Financial Modeling
+Python
+SQL
+MySQL
+PostgreSQL
+Tableau
+Data Modeling
+Pyspark
+Power BI
+PHP
+DBT
+L I N K S
+LinkedIn:
+www.linkedin.com/in/gerritf
+ourie
+W O R K E X P E R I E N C E
+Senior Data Engineer, Van Lanschot Kempen, Amsterdam
+Jun 2022 - Present
+• Drove the architectural design and development of an advanced data platform on
+Azure Cloud, leveraging the latest technologies to craft robust data products.
+• Transformed complex client and financial datasets into strategic insights, empowering
+Van Lanschot Kempen's leadership with data-driven decision-making capabilities.
+• Crafted and communicated sophisticated solution architectures, eﬀectively engaging
+with the team, corporate architects, and senior stakeholders.
+• Mentored junior team members, fostering technical excellence and adherence to best
+practices in solution delivery.
+• Enabled investment teams to make informed decisions by converting raw data into
+actionable intelligence, utilizing Power BI and Tableau for compelling data
+visualization.
+Head Of BI (Analytics and Development), Global Logistics Internet, Cape
+Town
+May 2019 - Jun 2022
+• Spearhead the design and maintenance of robust data pipelines and ETL processes,
+ensuring seamless integration between platforms and data warehouse architecture.
+• Leverage advanced analytics to transform customer data into strategic insights,
+empowering senior management to refine marketing and promotional initiatives.
+• Craft intuitive Tableau reports and oversee the maintenance of an accessible online
+Tableau environment.
+• Contribute strategic guidance as a key member of the senior management team,
+collaborating closely with the CEO and General Manager to steer GLI's direction.
+• Lead and mentor a dynamic team of BI experts, fostering a culture of excellence and
+continuous improvement in the analytics domain.
+Trade Optimization/BI Analyst, Pick n Pay, Cape Town
+May 2018 - May 2019
+• Transformed historical sales data into strategic insights via advanced data mining,
+predictive modeling, and visualization techniques.
+• Developed robust predictive demand forecasting models incorporating variables such
+as price, volume, demographics, location, and competitor analysis.
+• Engineered and maintained eﬃcient data pipelines, creating ETL processes to ensure
+the availability of clean, actionable data for the trade optimization team.
+• Leveraged data visualization tools like Power BI and Tableau to convert complex
+datasets into executive-friendly insights.
+• Collaborated with marketing teams to propel data-driven marketing initiatives and
+strategies.
+Wealth Manager/Fund Analyst, Eﬃcient Wealth (Pty) Ltd, Cape Town
+Oct 2014 - Sep 2016
+• Expertly construct and manage sophisticated unit trust and share portfolios tailored
+for high-net-worth clients, overseeing assets exceeding R500 million.
+• Conduct comprehensive due diligence and incisive analysis of the South African
+economic landscape, alongside local and international funds and equity investments.
+• Foster strong client relationships through daily interactions, meticulously updating risk
+and return profiles and resolving investment portfolio inquiries.
+• Lead and mentor junior team members, reinforcing the company's value proposition
+and mandate while cultivating a collaborative and synergistic work environment.
+Fund Accountant/Team Leader, JPMorgan Chase & Co., Belville
+Jan 2012 - Sep 2014
+• Utilize in-depth knowledge of Financial Instruments and market dynamics to
+accurately value securities using the HiPortfolio administration system, while
+employing analytical prowess to resolve pricing variances and guarantee precise NAV
+calculations.
+• Drive high-performance standards and foster sustained team synergy through
+eﬀective leadership and management of junior staﬀ, ensuring alignment with the
+company's value proposition and mandate.
+• Collaborate cross-functionally within Curo Fund Services to ensure meticulous
+execution of Corporate Actions and adherence to Risk Management protocols.
+• Engage directly with a diverse range of Asset Management clients, both domestically
+and internationally, to deliver valuations that meet client-specific objectives and
+requirements.
+E D U C A T I O N
+Master of Business Administration (MBA), Graduate School of Business -
+University of Cape Town, Cape Town
+2018
+Course Focus: Financial Analysis, Operations management, Economics, Leadership,
+People management, Corporate Finance, Marketing, Business strategy, Markets in
+emerging countries, New Ventures, Negotiation, Company valuation, Doing business in
+China and Asia.
+BComm, Economic Sciences Specialising in Financial Analysis, University
+of Stellenbosch, Stellenbosch
+2008
+Course focus: Financial analysis, Portfolio management, Equity analysis, International
+financial markets, Fixed interest securities, Property Investment and financing, Derivative
+financial instruments,
