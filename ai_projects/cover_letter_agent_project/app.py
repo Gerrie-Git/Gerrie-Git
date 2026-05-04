@@ -7,7 +7,7 @@ from mcp.server.fastmcp import FastMCP
 import json
 
 load_dotenv()
-mcp = FastMCP("cover-letter")
+mcp = FastMCP("cover-letter-generator")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 cv_text = open("cv.txt").read()
@@ -97,16 +97,10 @@ def review_cover_letter(client, cv, job_description, cover_letter):
     return response.output_text
 
 @mcp.tool()
-def cover_letter_generator():
+def cover_letter_generator(cv_text: str, job_description: str):
     cover_letter = generate_cover_letter(client, cv_text, job_description)
 
     review = review_cover_letter(client, cv_text, job_description, cover_letter)
-
-    print("=== COVER LETTER ===")
-    print(cover_letter)
-
-    print("\n=== REVIEW ===")
-    print(review)
 
     with open("cover_letter.txt", "w", encoding="utf-8") as f:
         f.write(cover_letter)
@@ -114,6 +108,11 @@ def cover_letter_generator():
     with open("review.txt", "w", encoding="utf-8") as f:
         f.write(review)
 
+    return {
+        "cover_letter": cover_letter,
+        "review": review
+    }
+
 
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    mcp.run()
