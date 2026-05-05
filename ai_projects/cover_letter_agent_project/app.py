@@ -1,12 +1,11 @@
 from dotenv import load_dotenv
 import os
-from langchain_openai import ChatOpenAI
-from langchain.tools import tool
 from openai import OpenAI
-from mcp.server.fastmcp import FastMCP
-import json
+from fastmcp import FastMCP
+import sys
+import traceback
 
-load_dotenv()
+load_dotenv(verbose=False)
 mcp = FastMCP("cover-letter-generator")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -38,16 +37,14 @@ def generate_cover_letter(client, cv, job_description):
     Do not invent experience.
     Limit words to 1000
 
-    Return your response as JSON:
-    {{
-    "critique": [...],
-    "improvements": [...],
-    "revised_letter": "..."
-    }}
+    Return:
+    - critique (bullet points)
+    - improvements (bullet points)
+    - revised letter
     """
 
     response = client.responses.create(
-        model="gpt-5",
+        model="gpt-4.1-mini",
         input=prompt,
     )
 
@@ -90,7 +87,7 @@ def review_cover_letter(client, cv, job_description, cover_letter):
     """
 
     response = client.responses.create(
-        model="gpt-5",
+        model="gpt-4.1-mini",
         input=prompt,
     )
 
@@ -98,20 +95,21 @@ def review_cover_letter(client, cv, job_description, cover_letter):
 
 @mcp.tool()
 def cover_letter_generator(cv_text: str, job_description: str):
-    cover_letter = generate_cover_letter(client, cv_text, job_description)
+    try:
+        cover_letter = generate_cover_letter(client, cv_text, job_description)
 
-    review = review_cover_letter(client, cv_text, job_description, cover_letter)
+        review = review_cover_letter(client, cv_text, job_description, cover_letter)
 
-    with open("cover_letter.txt", "w", encoding="utf-8") as f:
-        f.write(cover_letter)
+        return {
+            "cover_letter": cover_letter,
+            "review": review
+        }
 
-    with open("review.txt", "w", encoding="utf-8") as f:
-        f.write(review)
-
-    return {
-        "cover_letter": cover_letter,
-        "review": review
-    }
+    except Exception as e:
+        traceback.print_exc(file=sys.stderr)  # 🔥 THIS IS KEY
+        return {
+            "error": str(e)
+        }
 
 
 if __name__ == "__main__":
