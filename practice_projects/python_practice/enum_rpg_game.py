@@ -1,77 +1,70 @@
 from enum import Enum
-from random import random, randomint
+from random import random, randint
 
 
 class CharacterType(Enum):
-    WARRIOR = 0
-    MAGE = 1
-    ROGUE = 2
+    WARRIOR = "Warrior"
+    MAGE = "Mage"
+    ROGUE = "Rogue"
 
-class AttackType(Enum):
-    PHYSICAL = 0
-    MAGICAL = 1
-    POISON = 2
+class Enemy(Enum):
+    MONSTER = "Monster"
+    ZOMBIE = "Zombie"
+    WEREWOLF = "Werewolf"
 
-class BattleStatus(Enum):
-    ONGOING = 0
-    HERO_WIN = 1
-    MONSTER_WIN = 2
+class Item(Enum):
+    WEAPON = 0
+    POTION = 1
+    ARMOR = 2
 
-class Character:
-    
-    def __init__(self, name: str, hp:int , max_hp:int, attack_power:int):
+class GameState(Enum):
+    EXPLORING = 0
+    COMBAT = 1
+    GAMEOVER = 2
+
+
+class hero:
+    def __init__(self, name, type: CharacterType, health=100, attackpower=50):
         self.name = name
-        self.hp = hp
-        self.max_hp = max_hp
-        self.attack_power = attack_power
+        self.health = health
+        self.type = type
+        self.attackpower = attackpower
 
-    def hp_bar(self):
-        self.hp_bar = 100
+class enemy:
+    def __init__(self, name, type: Enemy, health=100, attackpower=50):
+        self.name = name
+        self.type = type
+        self.health = health
+        self.attackpower = attackpower
 
 
-    def take_damage():
-        pass
+# combat loop
 
-    def is_alive():
-        pass
+def combat(hero, enemy):
+    
+    while hero.health >= 0 and enemy.health >= 0:
 
-    def __str__():
-        pass
+        # player rolls the dice
+        playerattack = randint(0, hero.attackpower)
+        # player one attacks
+        print(f"{hero.name} hits {enemy.name} for {playerattack} points")
+        enemy.health -= playerattack
+        print(f"{enemy.name} has {enemy.health} points left")
 
-class Hero:
+        # player rolls the dice
+        enemyattack = randint(0, enemy.attackpower)
+        #enemy attackes
+        print(f"{enemy.name} hits {hero.name} for {enemyattack} points")
+        hero.health -= enemyattack
+        print(f"{hero.name} has {hero.health} points left")
 
-    def __init__(self, CharacterClass, special_abillity):
-        self.CharacterClass = CharacterClass.value
-        self.special_ability = special_abillity
+        if hero.health == 0:
+            print(f"The enemy {enemy.name} has won the match")
+        else:
+            print(f"The hero {hero.name} has won the match")
 
-class Monster:
-    def __init__(self, MonsterType):
-        self.MonsterType = MonsterType
+#print(CharacterType.WARRIOR.value)
+Hero1 = hero("Batman", CharacterType.WARRIOR.value, 100, 20)
+Enemy1 = enemy("The Joker", Enemy.ZOMBIE.value, 100, 15)
 
-    def rage_mechanic(self):
-        pass
-
-class Battle:
-    def __init__(self, hero, monster):
-        self.hero - hero
-        self.monster = monster
-
-    def hero_turn():
-        pass
-
-    def monster_turn():
-        pass
-
-    def check_status():
-        pass
-
-    def start():
-        pass
-
-        # 1: randomly select monster or hero to start
-        # 2: selected hero or monster attacks
-        #   -> randomly select an integer as the attack power 
-        #   -> decrease the attack power from the other players total health
-        # 3: Other player roles the dice to attack
-        #    -> randomly select an integer as the attack power 
-        #   -> decrease the attack power from the other players total health
+combat(Hero1, Enemy1)
