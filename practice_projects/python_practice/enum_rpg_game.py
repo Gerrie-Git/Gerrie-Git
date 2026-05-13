@@ -24,14 +24,29 @@ class GameState(Enum):
 
 
 class hero:
-    def __init__(self, name, type: CharacterType, health=100, attackpower=50):
+    def __init__(self, name, type: CharacterType, health=100, attackpower=20):
         self.name = name
         self.health = health
         self.type = type
         self.attackpower = attackpower
 
+    def use_item(self):
+        rand = randint(0,2)
+        print(rand)
+        if rand== Item.WEAPON.value:
+            self.attackpower += 20
+            print(f"The hero drank up a potion and has a new attackpower of {self.attackpower}")
+        elif rand == Item.POTION.value:
+            self.health += 25
+            print(f"The hero drank a potion and his health is now {self.health}")
+        elif rand == Item.ARMOR.value:
+            self.health += 10
+            print(f"The hero picked up the armor and has a higher health of {self.health}")
+
+
+
 class enemy:
-    def __init__(self, name, type: Enemy, health=100, attackpower=50):
+    def __init__(self, name, type: Enemy, health=100, attackpower=20):
         self.name = name
         self.type = type
         self.health = health
@@ -42,7 +57,7 @@ class enemy:
 
 def combat(hero, enemy):
     
-    while hero.health >= 0 and enemy.health >= 0:
+    while hero.health > 0 and enemy.health > 0:
 
         # player rolls the dice
         playerattack = randint(0, hero.attackpower)
@@ -58,10 +73,16 @@ def combat(hero, enemy):
         hero.health -= enemyattack
         print(f"{hero.name} has {hero.health} points left")
 
-        if hero.health == 0:
+        hero.use_item()
+
+        if hero.health <= 0:
             print(f"The enemy {enemy.name} has won the match")
-        else:
+            break
+        elif enemy.health <= 0:
             print(f"The hero {hero.name} has won the match")
+            break
+        else:
+            print(f"The match carries on!")
 
 #print(CharacterType.WARRIOR.value)
 Hero1 = hero("Batman", CharacterType.WARRIOR.value, 100, 20)
