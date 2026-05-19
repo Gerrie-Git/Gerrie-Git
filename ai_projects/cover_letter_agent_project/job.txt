@@ -1,0 +1,100 @@
+About the job
+Are you passionate about turning complex data into scalable, trusted foundations for decision-making? Do you enjoy operating at the intersection of engineering, analytics, and stakeholder collaboration?
+
+
+At MR MARVIS, we are looking for an AI-native engineer who leverages modern tools to automate technical workflows, streamline data pipelining, and efficiently translate business logic into code. In this role, you will bridge data engineering and business intelligence, taking ownership of the analytics layer of our data platform. You will ensure our data models are structured, governed, and scalable, enabling reliable reporting, self-serve analytics, and AI-driven use cases.
+
+
+This is a unique opportunity to be in the driver seat and define how data products are built and consumed at MR MARVIS.
+
+
+
+
+About MR MARVIS 
+
+
+
+MR MARVIS is an Amsterdam-based men's clothing brand launched in 2016, dedicated to creating the perfect shorts, trousers and tops. We are the largest Dutch clothing brand with a B Corp Certification; a label which is only awarded to companies that demonstrably make a positive impact and contribute to a better world. You’ve probably spotted us in vibrant cities such as Amsterdam, Antwerp, Munich and Brussels and we have a strong online presence across Europe.
+
+
+A diversity of backgrounds, cultures, and perspectives is essential in helping us maintain our momentum. So no matter where you’re from, who you love, or what you believe in, we welcome you to be your true self at MR MARVIS. To make our employees feel marvellous, we offer pension schemes and disability insurance and give them the opportunity to invest in personal growth and development.
+
+
+
+
+What you'll do
+
+
+
+As an Analytics Engineer, you will take ownership of the analytics layer of our data platform and help us shape the next phase.
+
+
+Design & Modeling
+
+Automate technical parts of the analytics workflow, building robust data pipelines that seamlessly translate complex business logic into scalable dbt models.
+Optimize models for performance, cost efficiency, and long-term maintainability.
+
+
+Stakeholder Collaboration
+
+Work closely with business stakeholders to translate analytical needs into structured data solutions, identify the true business question and deliver high-impact outcomes.
+Drive alignment around consistent and governed metric definitions and reporting standards.
+
+
+Self-Serve Enablement
+
+Enable governed self-serve analytics by simplifying access to trusted data sources.
+Support business users in adopting best practices for data exploration.
+Optimize our data platform - especially the analytics layer - for AI uses cases and applications
+
+
+Data Quality & Infrastructure
+
+Implement testing, monitoring, and data quality checks to ensure reliability.
+Partner with data engineers to ensure clean ingestion and proper upstream design.
+Optimize warehouse usage through thoughtful partitioning, clustering, and incremental modeling.
+
+
+
+
+What you'll bring
+
+
+
+Fluency in English and SQL.
+5+ years of experience in analytics engineering or similar roles.
+Practical experience leveraging AI tools to automate workflows, document business logic and accelerate coding.
+Deep expertise in data transformation using dbt.
+Proficient with version control systems like Git and comfortable with collaborative PR workflows.
+Solid understanding of data modeling (fact & dimension design, grain discipline)
+Experienced with the implementation of data quality tests and validation frameworks.
+Experience with BI tools (Looker Studio, Tableau, Omni, etc.).
+Proven stakeholder management skills across different seniority levels.
+Ability to structure ambiguous problems and propose pragmatic solutions.
+You can explain clustering and partitioning to a 10-year-old.
+
+
+
+
+What you'll get
+
+
+
+Like every great employer we offer you a competitive salary and the following benefits;
+25 vacation days;
+A pension scheme, because later is also important;
+Mobility allowance in case you live outside of Amsterdam;
+All equipment needed to set you up for success;
+Daily free & fresh lunch served at the office;
+20% discount on the entire MR MARVIS collection;
+Monthly "Wellbeing budget for Swapfiets, Treatwell, or several gyms. Want to invest your budget? You can, via Peaks!
+Free unlimited access to OpenUp (coaching/psychologists platform) as well as Meditation Moments (meditation App);
+Personal development opportunities to help you grow and excel in your role;
+Hybrid working with an inspiring office in the heart of Amsterdam;
+Sabbatical after 5 years with us: enjoy some well-deserved rest;
+Join a B-corp and make a real impact;
+Working in a fun, international team at a fast growing scale-up;
+Amazing team events and weekly Friday drinks with your colleagues.
+
+
+MR MARVIS is an equal opportunity employer. We are committed to nurturing an inclusive environment for all current and potential employees. A diversity of backgrounds, cultures, and perspectives is essential in helping us maintain our momentum. So no matter where you’re from, who you love, or what you believe in, we welcome you to be your true self at MR MARVIS.
