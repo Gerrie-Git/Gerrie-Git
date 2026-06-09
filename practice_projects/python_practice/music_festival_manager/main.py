@@ -5,7 +5,6 @@ import cls_slot as cs
 import cls_festival as cf
 
 
-
 Deftones = ca.Artist("Deftones", 666, e.Genre.ROCK, e.StageSize.MAINSTAGE)
 print(Deftones)
 
@@ -39,3 +38,7 @@ if __name__ == "__main__":
     print("\n── Clash Test ──")
     festival.book_slot(5, e.StageSize.MAINSTAGE, day=1, start_time="22:00")
 
+    #festival.save_to_json()
+
+    #for x in festival["Artist"]:
+    #    print(x)

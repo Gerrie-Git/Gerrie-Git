@@ -1,0 +1,35 @@
+{
+  "Name": "Lowlands 2026",
+  "Slot ID": 7,
+  "Artist": [
+    {
+      "Name": "Bicep",
+      "Artist ID": 1,
+      "Genre": "electronic",
+      "Stage Requirement": "large"
+    },
+    {
+      "Name": "Kendrick Lamar",
+      "Artist ID": 2,
+      "Genre": "hiphop",
+      "Stage Requirement": "mainstage"
+    },
+    {
+      "Name": "Norah Jones",
+      "Artist ID": 3,
+      "Genre": "jazz",
+      "Stage Requirement": "medium"
+    },
+    {
+      "Name": "Arctic Monkeys",
+      "Artist ID": 4,
+      "Genre": "rock",
+      "Stage Requirement": "mainstage"
+    },
+    {
+      "Name": "Dua Lipa",
+      "Artist ID": 5,
+      "Genre": "pop",
+      "Stage Requirement": "mainstage"
+    }
+  ]}
